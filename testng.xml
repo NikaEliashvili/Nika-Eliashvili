@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="HomeWorkSuite" parallel="classes" thread-count="2">
+
+    <test name="ParallelTests">
+        <classes>
+            <class name="com.homework.FormTests"/>
+            <class name="com.homework.AlertTests"/>
+        </classes>
+    </test>
+
+</suite>
