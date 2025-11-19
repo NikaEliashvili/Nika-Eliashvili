@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 public class AlertTests extends BaseTest {
 
     @Test
-    public void testAlertWithTextbox() {
+    public void testAlertWithTextbox() throws InterruptedException {
 
         driver.get("https://demo.automationtesting.in/Alerts.html");
 
@@ -33,5 +33,6 @@ public class AlertTests extends BaseTest {
         String resultText = driver.findElement(By.id("demo1")).getText();
 
         Assert.assertTrue(resultText.contains(fullName));
+
     }
 }
