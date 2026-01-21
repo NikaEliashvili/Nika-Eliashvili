@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="HomeWorkSuite" parallel="classes" thread-count="2">
+
+    <listeners>
+        <listener class-name="com.homework.utils.AllureTestListener"/>
+    </listeners>
+
+    <test name="ParallelTests">
+        <classes>
+            <class name="com.homework.tests.FormTests"/>
+            <class name="com.homework.tests.AlertTests"/>
+        </classes>
+    </test>
+
+</suite>
